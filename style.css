@@ -1,0 +1,158 @@
+/*Ccommon start*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+/*common end*/
+/*banner start*/
+header {
+    padding: 15px 0;
+    background-color: #121b2c;
+}
+.wrapper {
+    width: 90%;
+    /*border: 1px solid white;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo {
+    width: 10%;
+    /*border: 1px solid red;*/
+    float: left;
+}
+.logo a {
+    display: block;
+}
+.logo a img {
+    width: 100%;
+}
+.menu {
+    float: right;
+    width: 50%;
+    /*border: 1px solid white;*/
+}
+.menu ul {
+    float: right;
+}
+.menu ul li {
+    float: left;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 25px 10px;
+    display: block;
+    transition: 0.5s;
+}
+.menu ul li:last-child a {
+    margin-right: 0;
+}
+.menu li a:hover {
+    color: #0174b9;
+}
+/*header end*/
+/*banner start*/
+.banner {
+    background-image: url("../blue/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.wrapper {
+}
+
+.banner.content {
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    width: 40%;
+}
+.banner.content p:first-child {
+    font-size: 30px;
+}
+.banner.content h1 {
+    color: #0174b9;
+    font-size: 35px;
+}
+.banner.content p:nth-last-child(2) {
+    font-size: 15px;
+}
+.banner.content button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+.banner.content button span {
+    background-color: #131c2b;
+    padding: 4px 6px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/*banner end*/
+/*service start*/
+.service {
+    background-color: #121b2c;
+    padding: 50px 0;
+
+}
+
+.wrapper {
+}
+
+.single {
+    width: 27%;
+    border-right: 1px solid white;
+    padding: 10px 20px;
+    float: left;
+    margin-left: 1px;
+}
+.single:last-child {
+    border-right: 0;
+}
+
+.title {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 25%;
+    float: left;
+    /*border: 1px solid burlywood;*/
+}
+.icon img {
+    width: 100%;
+}
+
+.icon-content {
+    width: 65%;
+    float: left;
+    /*border: 1px solid blanchedalmond;*/
+    margin-top: 10px;
+}
+.icon-content h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.icon-content h2 {
+    color: #0174b9;
+    font-size: 20px;
+    font-family: verdana;
+    font-weight: 500;
+}
+
+.content {
+}
+.content p {
+    color: white;
+    line-height: 1.3;
+}
