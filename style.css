@@ -1,98 +1,97 @@
-/*Ccommon start*/
-* {
+/*common start*/
+body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    color: #f0f1f2;
     font-family: sans-serif;
 }
 /*common end*/
-/*banner start*/
-header {
-    padding: 15px 0;
-    background-color: #121b2c;
+/*header start*/
+header , footer {
+    background-color: #121b2a;
+    padding: 10px 0;
 }
 .wrapper {
     width: 90%;
-    /*border: 1px solid white;*/
-    margin: 0 auto;
+    /*border: 1px solid green;*/
     overflow: hidden;
+    margin: 0 auto;
 }
 .logo {
-    width: 10%;
-    /*border: 1px solid red;*/
     float: left;
+    width: 15%;
+    /*border: 1px solid red;*/
 }
-.logo a {
-    display: block;
-}
-.logo a img {
+.logo img {
     width: 100%;
 }
 .menu {
     float: right;
     width: 50%;
-    /*border: 1px solid white;*/
+    /*border: 1px solid red;*/
 }
 .menu ul {
     float: right;
 }
-.menu ul li {
+.menu ul li , .f_menu ul li {
     float: left;
     list-style: none;
 }
-.menu ul li a {
+.menu ul li a , .f_menu ul li a {
     text-decoration: none;
-    font-size: 18px;
-    color: white;
-    padding: 25px 10px;
+    color: #f0f1f2;
+    font-size: 15px;
+    padding: 5px 15px;
     display: block;
-    transition: 0.5s;
+    transition: .5s;
 }
 .menu ul li:last-child a {
-    margin-right: 0;
+   padding-right: 0; 
 }
-.menu li a:hover {
-    color: #0174b9;
+.menu ul li a:hover , .f_menu ul li a:hover {
+    color: #0175b8;
 }
 /*header end*/
 /*banner start*/
 .banner {
-    background-image: url("../blue/images/banner.jpg");
+    background-color: #121b2a;
+    background-image: url('images/banner.jpg');
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
 }
-
-.wrapper {
+.wrapper {  
 }
-
-.banner.content {
-    color: white;
+.b-content {
     margin-top: 200px;
-    margin-bottom: 80px;
-    width: 40%;
+    margin-bottom: 50px;
+    width: 45%;
+    border: 2px solid white;
 }
-.banner.content p:first-child {
-    font-size: 30px;
+.b-content p:first-child {
+    font-size: 28px;
 }
-.banner.content h1 {
-    color: #0174b9;
+.b-content h1 {
+    color: #0175b8;
     font-size: 35px;
 }
-.banner.content p:nth-last-child(2) {
-    font-size: 15px;
+.b-content p:nth-last-child(2) {
+    font-size: 18px;
+    line-height: 1.5;
 }
-.banner.content button {
+.b-content button {
     border: none;
     padding: 10px 20px;
-    border-radius: 3px;
+    color: #626262;
+    border-radius: 5px;
+    font-size: 16px;
     margin-top: 20px;
-    color: #5a5a5a;
-    font-weight: bold;
 }
-.banner.content button span {
-    background-color: #131c2b;
-    padding: 4px 6px;
+.b-content button span {
+    background-color: #121b2a;
+    padding: 4px 7px;
+    color: white;
     border-radius: 50%;
     margin-left: 10px;
 }
@@ -101,58 +100,157 @@ header {
 .service {
     background-color: #121b2c;
     padding: 50px 0;
-
 }
-
-.wrapper {
-}
-
+.wrapper {}
+/*single start*/
 .single {
-    width: 27%;
-    border-right: 1px solid white;
+    width: 26%;
     padding: 10px 20px;
     float: left;
-    margin-left: 1px;
+    border-right: 1px solid white;
+    margin-left: 5px;
 }
 .single:last-child {
     border-right: 0;
 }
-
 .title {
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
-
 .icon {
     width: 25%;
     float: left;
-    /*border: 1px solid burlywood;*/
+    display: block;
+    /*order: 1px solid yellow;*/
 }
 .icon img {
     width: 100%;
 }
-
 .icon-content {
-    width: 65%;
+    width: 70%;
     float: left;
-    /*border: 1px solid blanchedalmond;*/
-    margin-top: 10px;
+    margin-top: 25px;
+    /*border: 1px solid yellow;*/
 }
 .icon-content h1 {
-    color: white;
-    font-weight: lighter;
     font-size: 20px;
+    font-weight: normal;
 }
-.icon-content h2 {
-    color: #0174b9;
-    font-size: 20px;
-    font-family: verdana;
-    font-weight: 500;
+.icon-content h2, .sin_h2 {
+    color: #0175b8;
+    font-size: 23px;
+    font-weight: normal;
+}
+.content {}
+.content p {
+    font-size: 15px;
+    line-height: 1.4;
+}
+/*service end*/
+/*contact start*/
+.info {
+    padding-top: 40px;
+    background-color: #040811;
+    overflow: hidden;
+}
+.contact {
+    margin-right: 4%;
+    padding-right: 0;
+    width: 27%;
+    min-height: 300px;
+    float: left;
+    /*border: 1px solid white;*/
+}
+.talk {
+    margin-right: 4%;
+    width: 27%;
+    min-height: 300px;
+    float: left;
+    /*border: 1px solid goldenrod;*/
+}
+.talk_h1 {
+    font-size: 23px;
+    font-weight: normal;
+}
+#talkbubble {
+    width: 27%;
+    height: 5px;
+    min-height: 250px;
+    /*padding: 20px;*/
+    background: #0c1019;
+    position: relative;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+    line-break: 0;
+    border: 1px solid white;
+  }
+  #talkbubble:after {
+    content: "";
+    position: absolute;
+    right: 20%;
+    bottom: -35px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 59px solid transparent;
+    border-top: 35px solid #0c1019;
+  }
+.customer {
+    float: left;
+}
+.advertise {
+    margin-right: 0%;
+    float: left;
+    width: 27%;
+    min-height: 300px;
+}
+.wrap_ad {
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+.images_ad {
+    width: 58%;
+    float: left;
+    /*border: 1px solid green;*/
+}
+.images_ad img {
+    width: 85%;
+    display: block;
+}
+.ad_right {
+    width: 40%;
+    float: left;
+    /*border: 1px solid white;*/
+}
+.ad_right h3 {
+    line-height: 0;
+}
+.ad_right a {
+    display: block;
+}
+.f_menu, .f_img {
+    float: left;
+    padding: 10px 0 10px;
+    overflow: hidden;
+}
+.c_right {
+    margin-left: 55px;
+    margin-bottom: 40px;
+}
+.c_right p a {
+    color: #f0f1f2;
+    text-decoration: none;
+    transition: .33s;
+}
+.c_right p a:hover {
+    color: #0175b8;
+}
+.f_img {
+    float: left;
+}
+.f_img_i , .f_img_ii {
+    padding: 10px;
+    float: left;
 }
 
-.content {
-}
-.content p {
-    color: white;
-    line-height: 1.3;
-}
